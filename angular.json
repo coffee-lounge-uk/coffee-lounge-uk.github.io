@@ -94,6 +94,15 @@
             ],
             "scripts": []
           }
+        },
+				"deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/",
+            "outputPath": "dist/coffee-lounge",
+            "branch": "main",
+            "repo": "https://github.com/coffee-lounge-uk/coffee-lounge-uk.github.io.git"
+          }
         }
       }
     }
