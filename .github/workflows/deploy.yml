@@ -39,5 +39,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main
-          folder: dist/coffee-lounge
-          token: ${{ secrets.GITHUB_TOKEN }}  # Critical fix
+          folder: dist/coffee-lounge/browser
+          token: ${{ secrets.GITHUB_TOKEN }}
