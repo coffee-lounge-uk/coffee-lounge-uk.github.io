@@ -119,82 +119,143 @@ button {
   color: #6b7280;
 }
 
-.category-filter {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap into multiple rows */
-  justify-content: center;
-  gap: 24px; /* Space between items */
-  padding-left: 16px;
-  padding-right: 16px;
-	margin: 30px auto;
-
-  .filter-item {
-    display: flex;
-    flex-direction: column; /* Stack the icon and name vertically */
-    align-items: center; /* Center align the content */
-    transition: all 0.2s ease-in-out;
-    border-color: transparent;
-    text-align: center;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
-
-    img {
-      width: 64px; /* Larger icon size */
-      height: 64px;
-      transition: transform 0.2s ease;
-    }
-
-    &:active img {
-      transform: scale(0.95);
-    }
-
-    span {
-      margin-top: 8px; /* Space between icon and name */
-    }
-
-		&.bg-purple-200 {
-      background-color: #E9D8FD; /* Light purple background */
-      animation: pulse 0.6s ease-out infinite; /* Animation on selection */
-    }
-
-    &.border-purple-600 {
-      border-color: #6B21A8; /* Purple border when selected */
-    }
-  }
-
-  /* Large screens (Desktop) - 6 items per row */
-  @media (min-width: 1024px) {
-    .filter-item {
-      width: calc(16.666% - 24px); /* 6 items per row */
-    }
-  }
-
-  /* Medium screens (Tablet) - 4 items per row */
-  @media (max-width: 1024px) and (min-width: 768px) {
-    .filter-item {
-      width: calc(25% - 24px); /* 4 items per row */
-    }
-  }
-
-  /* Small screens (Mobile) - 2 items per row */
-  @media (max-width: 768px) {
-    .filter-item {
-      width: calc(50% - 24px); /* 2 items per row */
-    }
-  }
-
-  /* Extra small screens (Very small mobile) - 1 item per row */
-  @media (max-width: 480px) {
-    .filter-item {
-      width: 100%; /* 1 item per row on very small screens */
-    }
-  }
-}
-
 img {
 	width: 64px; /* Larger icon size */
 	height: 64px;
 	transition: transform 0.2s ease;
+}
+
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 16px;
+  margin: 40px auto;
+
+  .filter-item {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+
+    // Large screens: 6 items per row (12/6=2 rows)
+    @media (min-width: 1280px) {
+      width: calc(16.666% - 24px); // 100%/6 - gap
+    }
+
+    // Medium screens: 4 items per row (12/4=3 rows)
+    @media (max-width: 1279px) and (min-width: 768px) {
+      width: calc(25% - 24px); // 100%/4 - gap
+    }
+
+    // Small screens: 2 items per row (12/2=6 rows)
+    @media (max-width: 767px) and (min-width: 480px) {
+      width: calc(50% - 24px); // 100%/2 - gap
+    }
+
+    // Extra small: 1 item per row (12 rows)
+    @media (max-width: 479px) {
+      width: calc(100% - 24px);
+    }
+
+    // Existing styles remain
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px;
+    position: relative;
+
+    img {
+      width: 48px;
+      height: 48px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: grayscale(1) opacity(0.7);
+    }
+
+    span {
+      color: #6b7280;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      margin-top: 8px;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #6B21A8;
+        transition: width 0.3s ease;
+      }
+    }
+
+    // Selected state
+    &[class*='bg-purple-50'] {
+      img {
+        filter: none;
+        opacity: 1;
+        transform: translateY(-4px);
+        animation: icon-float 1.5s ease-in-out infinite;
+      }
+
+      span {
+        color: #6B21A8;
+        font-weight: 600;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    // Hover state
+    &:hover {
+      img {
+        filter: grayscale(0.5) opacity(0.9);
+        transform: scale(1.05);
+      }
+
+      span {
+        color: #4c1d95;
+      }
+    }
+  }
+
+  // Keyframes for subtle float animation
+  @keyframes icon-float {
+    0%, 100% { transform: translateY(-4px); }
+    50% { transform: translateY(-6px); }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    gap: 24px;
+    
+    .filter-item {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 16px;
+    
+    .filter-item {
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
 }
