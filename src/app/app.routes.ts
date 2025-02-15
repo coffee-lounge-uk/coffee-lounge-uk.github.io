@@ -1,24 +1,19 @@
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './home-page/home-page.component';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-import { MenuComponent } from './home-page/menu/menu.component';
-import { SpecialityComponent } from './home-page/speciality/speciality.component';
-import { ContactComponent } from './home-page/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
+  { path: '**', redirectTo: '' },
+  { path: '', component: HomeComponent },
 	{
-		path: '',
-		component: HomePageComponent,
-		children: [
-			{ path: 'home', component: HomePageComponent },
-			{ path: 'specialities', component: HomePageComponent },
-			{ path: 'menu', component: HomePageComponent },
-			{ path: 'contact', component: HomePageComponent }
-		]
-	}
+    path: 'item/:name',
+    loadComponent: () => import('./components/item-detail/item-detail.component').then(m => m.ItemDetailComponent)
+  },
 ];
 
 @NgModule({

@@ -6,4 +6,5 @@ export class MenuItem {
 	Price!: number;
 	IsSpecial: boolean = false;
 	Category!: MenuCategory;
+	ImagePath!: string;
 }

@@ -1,0 +1,116 @@
+<main class="container mx-auto px-4 py-8">
+	<!-- Today's Specials -->
+	<section class="mb-16">
+		<h2 class="font-display text-2xl md:text-3xl mb-6 text-center text-purple-800">
+			Today's Specials
+		</h2>
+		<div class="relative w-full px-12">
+			<button 
+				class="absolute left-0 top-1/2 -translate-y-1/2 z-10 hover:bg-purple-100 p-2 rounded-full"
+				(click)="prevSlide()"
+			>
+			<img 
+				src="assets/svg/left.svg" 
+				alt="Left"
+				class="custom-icon"
+			>
+			</button>
+			
+			<div class="overflow-hidden">
+				<div 
+					class="transition-transform duration-500 ease-in-out flex"
+					[style.transform]="'translateX(-' + (currentSpecialIndex() * 100) + '%)'"
+				>
+					@for (special of specials; track special.Name) {
+						<div class="w-full flex-shrink-0">
+							<div 
+								class="bg-white rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto cursor-pointer hover:shadow-2xl transition-shadow"
+								[routerLink]="['/item', special.Name.toLowerCase().replace(' ', '-')]"
+								[state]="special"
+							>
+								<div class="aspect-video w-full">
+									<img [src]="special.ImagePath" [alt]="special.Name" class="w-full h-full object-cover">
+								</div>
+								<div class="p-6">
+									<div class="flex justify-between items-start mb-2">
+										<h3 class="font-display text-xl text-purple-900">{{ special.Name }}</h3>
+										<span class="text-lg font-medium text-green-600">{{ special.Price }}</span>
+									</div>
+									@if (special.Category) {
+										<div class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-2">
+											{{ special.Category }}
+										</div>
+									}
+									<p class="text-muted-foreground">{{ special.Description }}</p>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+
+			<button 
+				class="absolute right-0 top-1/2 -translate-y-1/2 z-10 hover:bg-purple-100 p-2 rounded-full"
+				(click)="nextSlide()"
+			>
+			<img 
+				src="assets/svg/right.svg" 
+				alt="Left"
+				class="custom-icon"
+			>
+			</button>
+		</div>
+	</section>
+
+	<!-- Menu Categories -->
+	@for (category of menuCategories; track category.Name) {
+		<section class="mb-16">
+			<h2 class="font-display text-2xl md:text-3xl mb-6 text-center text-purple-800">
+				{{ category.Name }}
+			</h2>
+			<div class="grid md:grid-cols-2 gap-6">
+				@for (item of getCategoryItems(category.Name); track item.Name) {
+					<div 
+						class="bg-white rounded-lg shadow-xl overflow-hidden cursor-pointer hover:shadow-2xl transition-all hover:-translate-y-1"
+						[routerLink]="['/item', item.Name.toLowerCase().replace(' ', '-')]"
+						[state]="item"
+					>
+						<div class="aspect-video w-full">
+							<img [src]="item.ImagePath" [alt]="item.Name" class="w-full h-full object-cover">
+						</div>
+						<div class="p-6">
+							<div class="flex justify-between items-start mb-2">
+								<h3 class="font-display text-lg text-purple-900">{{ item.Name }}</h3>
+								<span class="font-medium text-green-600">{{ item.Price }}</span>
+							</div>
+							<p class="text-sm text-muted-foreground">{{ item.Description }}</p>
+						</div>
+					</div>
+				}
+			</div>
+		</section>
+	}
+
+	<!-- Contact & Location -->
+	<section class="mb-16 text-center bg-white p-8 rounded-lg shadow-lg">
+		<h2 class="font-display text-2xl md:text-3xl mb-6 text-purple-900">Visit Us</h2>
+		<div class="space-y-4 mb-8">
+			<div class="flex items-center justify-center space-x-2">
+				<img 
+					src="assets/svg/phone.svg" 
+					alt="Left"
+					class="custom-icon"
+				>
+				<span class="text-lg">02083165888, 07917818319</span>
+			</div>
+			<div class="flex items-center justify-center space-x-2">
+				<img 
+					src="assets/svg/map-pin.svg" 
+					alt="Left"
+					class="custom-icon"
+				>
+				<span class="text-lg">8 Plumstead High St, London SE18 1SN</span>
+			</div>
+		</div>
+	</section>
+</main>

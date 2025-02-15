@@ -1,31 +1,37 @@
 import { Injectable } from '@angular/core';
 import { MenuItem } from '../interfaces/menu-item.interface';
 import { MenuCategory } from '../enums/menu-category.enum';
-import { menuItems } from '../data/menu.data';
+import { MenuItems } from '../data/menu.data';
+import { MenuCategoryItems } from '../data/menu-categories.data';
+import { MenuCategoryItem } from '../interfaces/menu-category-item.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
-	private menuItems: MenuItem[] = [];
+	private specialMenuItems: MenuItem[] = [];
 
 	constructor() {
-		this.menuItems = menuItems;
+		this.specialMenuItems = MenuItems.filter(i => i.IsSpecial);
 	}
 
   getMenu(): MenuItem[] { 
-		return this.menuItems; 
+		return MenuItems; 
 	}
 
   getSpecialItems(): MenuItem[] { 
-		return this.menuItems.filter(i => i.IsSpecial); 
+		return this.specialMenuItems; 
 	}
 
-  getCategories(): MenuCategory[] { 
-		return Object.values(MenuCategory);
+  getCategories(): MenuCategoryItem[] { 
+		return MenuCategoryItems;;
 	}
 
-  getItemByName(name: string) { 
-		return this.menuItems.find(item => item.Name === name); 
+  getItemByName(name: string): MenuItem | undefined { 
+		return MenuItems.find(item => item.Name === name); 
+	}
+
+	GetItemsByCategory(category: MenuCategory): MenuItem[] {
+		return MenuItems.filter(item => item.Category === category);
 	}
 }
