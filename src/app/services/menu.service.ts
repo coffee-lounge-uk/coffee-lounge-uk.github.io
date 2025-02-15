@@ -27,8 +27,8 @@ export class MenuService {
 		return MenuCategoryItems;
 	}
 
-  getItemByName(name: string): MenuItem | undefined { 
-		return MenuItems.find(item => item.Name === name); 
+  getItemById(id: string): MenuItem | undefined { 
+		return MenuItems.find(item => item.Id.toString() === id); 
 	}
 
 	GetItemsByCategory(category: MenuCategory): MenuItem[] {

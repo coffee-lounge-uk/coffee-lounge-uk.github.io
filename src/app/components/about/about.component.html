@@ -1,17 +1,66 @@
 <section class="about">
-  <h2>About Us</h2>
-  <p>We are a cozy coffee shop dedicated to serving the best coffee in town. Our beans are sourced from the finest farms around the world.</p>
-	<section class="mb-16 text-center bg-white p-8 rounded-lg shadow-lg">
-    <h2 class="font-display text-2xl md:text-3xl mb-6 text-purple-900">Visit Us</h2>
-    <div class="space-y-4 mb-8">
-      <div class="flex items-center justify-center space-x-2">
-        <img src="assets/svg/phone.svg" alt="Phone" class="custom-icon">
-        <span class="text-lg">02083165888, 07917818319</span>
+  <div class="container mx-auto px-4 py-8">
+    <!-- About Us Content -->
+    <div class="text-center mb-12">
+      <h2 class="font-display text-3xl md:text-4xl mb-4 text-purple-900">About Us</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        We are a cozy coffee shop dedicated to serving the best coffee in town. Our beans are sourced from the finest farms around the world.
+      </p>
+    </div>
+
+    <!-- Visit Us Section -->
+    <div class="mb-16 text-center bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="font-display text-2xl md:text-3xl mb-6 text-purple-900">Visit Us</h2>
+      <div class="space-y-4 mb-8">
+        <!-- Phone -->
+        <div class="flex items-center justify-center space-x-2">
+          <img src="assets/svg/phone.svg" alt="Phone" class="w-6 h-6">
+          <span class="text-lg">02083165888, 07917818319</span>
+        </div>
+        <!-- Address -->
+        <div class="flex items-center justify-center space-x-2">
+          <img src="assets/svg/map-pin.svg" alt="Location" class="w-6 h-6">
+          <span class="text-lg">8 Plumstead High St, London SE18 1SN</span>
+        </div>
+        <!-- Email -->
+        <div class="flex items-center justify-center space-x-2">
+          <img src="assets/svg/mail.svg" alt="Email" class="w-6 h-6">
+          <span class="text-lg">info&#64;coffeelounge.com</span>
+        </div>
       </div>
-      <div class="flex items-center justify-center space-x-2">
-        <img src="assets/svg/map-pin.svg" alt="Location" class="custom-icon">
-        <span class="text-lg">8 Plumstead High St, London SE18 1SN</span>
+
+      <!-- Order Buttons -->
+      <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <a 
+          href="tel:02083165888" 
+          class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
+        >
+          Call to Order
+        </a>
+        <a 
+          href="https://www.ubereats.com" 
+          target="_blank" 
+          class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+        >
+          Order Online (Uber Eats)
+        </a>
       </div>
     </div>
-  </section>
+
+    <!-- Social Media Links -->
+    <div class="text-center">
+      <h3 class="font-display text-2xl md:text-3xl mb-6 text-purple-900">Follow Us</h3>
+      <div class="flex justify-center space-x-6">
+        <a href="https://facebook.com" target="_blank">
+          <img src="assets/svg/facebook.svg" alt="Facebook" class="w-8 h-8 hover:opacity-75 transition-opacity">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="assets/svg/instagram.svg" alt="Instagram" class="w-8 h-8 hover:opacity-75 transition-opacity">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="assets/svg/twitter.svg" alt="Twitter" class="w-8 h-8 hover:opacity-75 transition-opacity">
+        </a>
+      </div>
+    </div>
+  </div>
 </section>

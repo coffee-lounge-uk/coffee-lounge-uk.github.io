@@ -1,0 +1,68 @@
+.about {
+  background-color: #f9fafb; // Light background for the section
+  padding: 4rem 0; // Spacing around the section
+
+  .container {
+    max-width: 1200px; // Limit container width
+    margin: 0 auto; // Center the container
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif; // Example of a display font
+    color: #4c1d95; // Deep purple color
+    margin-bottom: 1.5rem; // Spacing below headings
+  }
+
+  p {
+    color: #6b7280; // Muted text color
+    line-height: 1.6; // Improve readability
+  }
+
+  .bg-white {
+    background-color: #ffffff; // White background for the "Visit Us" section
+    border-radius: 12px; // Rounded corners
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow
+    padding: 2rem; // Inner spacing
+  }
+
+  .custom-icon {
+    width: 24px; // Icon size
+    height: 24px;
+    filter: invert(24%) sepia(14%) saturate(2000%) hue-rotate(231deg) brightness(90%) contrast(90%); // Purple color for icons
+  }
+
+  a {
+    text-decoration: none; // Remove underline from links
+    transition: all 0.3s ease; // Smooth hover effect
+
+    &:hover {
+      opacity: 0.9; // Slight fade on hover
+    }
+  }
+
+  .bg-purple-600 {
+    background-color: #7c3aed; // Purple button color
+    &:hover {
+      background-color: #6d28d9; // Darker purple on hover
+    }
+  }
+
+  .bg-green-600 {
+    background-color: #16a34a; // Green button color
+    &:hover {
+      background-color: #15803d; // Darker green on hover
+    }
+  }
+
+  .social-links {
+    img {
+      width: 32px; // Social media icon size
+      height: 32px;
+      transition: opacity 0.3s ease; // Smooth hover effect
+
+      &:hover {
+        opacity: 0.75; // Slight fade on hover
+      }
+    }
+  }
+}

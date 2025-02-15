@@ -3,17 +3,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
-import { MenuComponent } from './components/menu/menu.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
-  { path: '**', redirectTo: '' },
-  { path: '', component: HomeComponent },
+	{ path: '', component: HomeComponent },
 	{
-    path: 'item/:name',
+		path: 'item/:id',
     loadComponent: () => import('./components/item-detail/item-detail.component').then(m => m.ItemDetailComponent)
   },
+	{ path: '**', redirectTo: '' },
 ];
 
 @NgModule({

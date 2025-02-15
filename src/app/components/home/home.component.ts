@@ -2,7 +2,7 @@ import { Component, OnInit, signal } from '@angular/core';
 import { MenuItem } from '../../interfaces/menu-item.interface';
 import { MenuService } from '../../services/menu.service';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { MenuCategoryItem } from '../../interfaces/menu-category-item.interface';
 import { MenuCategory } from '../../enums/menu-category.enum';
 import { MenuComponent } from "../menu/menu.component";
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   currentSpecialIndex: number = 0;
   private intervalId: any;
 
-  constructor(private menuService: MenuService) {}
+  constructor(private router: Router, private menuService: MenuService) {}
 
   ngOnInit() {
     this.specials = this.menuService.getSpecialItems();
@@ -50,4 +50,8 @@ export class HomeComponent implements OnInit {
   nextSlide() {
 		this.currentSpecialIndex = (this.currentSpecialIndex + 1) % this.specials.length;
   }
+
+	goToItem(id: number) {
+		this.router.navigate([`/item/${id}`]);
+	}
 }

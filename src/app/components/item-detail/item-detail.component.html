@@ -1,1 +1,65 @@
-<p>item-detail works!</p>
+<div class="container mx-auto px-4">
+	@if (item) {
+		<div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto">
+			<div class="aspect-video w-full">
+				<img 
+					[src]="item.ImagePath" 
+					[alt]="item.Name" 
+					class="w-full h-full object-cover"
+				>
+			</div>
+			
+			<div class="p-8">
+				<div class="flex justify-between items-start mb-4">
+					<h1 class="font-display text-3xl text-purple-900">{{ item.Name }}</h1>
+					<span class="text-2xl font-medium text-green-600">£ {{ item.Price }}</span>
+				</div>
+
+				@if (item.Category) {
+					<div class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
+						{{ item.Category }}
+					</div>
+				}
+
+				<p class="text-gray-600 mb-8 text-lg">{{ item.Description }}</p>
+
+				<div class="space-y-6">
+					<div class="bg-purple-50 p-6 rounded-lg">
+						<h2 class="font-display text-xl text-purple-900 mb-4">Order Now</h2>
+						<div class="space-y-4">
+							<a 
+								href="tel:02083165888" 
+								class="inline-flex items-center justify-center w-full px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700"
+							>
+								<img src="assets/svg/phone.svg" alt="Call" class="custom-icon">
+								Call: 02083165888
+							</a>
+							<a 
+								href="tel:07917818319"
+								class="inline-flex items-center justify-center w-full px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700"
+							>
+								<img src="assets/svg/phone.svg" alt="Call" class="custom-icon">
+								Call: 07917818319
+							</a>
+						</div>
+					</div>
+
+					<div class="bg-purple-50 p-6 rounded-lg">
+						<h2 class="font-display text-xl text-purple-900 mb-4">Order Online</h2>
+						<div class="space-y-4">
+							<a 
+								href="https://ubereats.com" 
+								target="_blank" 
+								rel="noopener noreferrer"
+								class="inline-flex items-center justify-center w-full px-4 py-2 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-50"
+							>
+							<img src="assets/images/uber-eats.png" alt="Uber Eats" class="custom-icon">
+								Order on Uber Eats
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+</div>

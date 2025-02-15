@@ -8,8 +8,7 @@
         @for (item of getCategoryItems(category.Name); track item.Name) {
           <div 
             class="bg-white rounded-lg shadow-xl overflow-hidden cursor-pointer hover:shadow-2xl transition-all hover:-translate-y-1"
-            [routerLink]="['/item', item.Name.toLowerCase().replace(' ', '-')]"
-            [state]="item"
+            (click)="goToItem(item.Id)"
           >
             <div class="aspect-video w-full">
               <img [src]="item.ImagePath" [alt]="item.Name" class="object-cover">

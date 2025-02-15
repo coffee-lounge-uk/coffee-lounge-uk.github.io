@@ -1,7 +1,7 @@
 import { MenuCategory } from "../enums/menu-category.enum";
 
 export class MenuItem {
-	id!: number;
+	Id!: number;
 	Name!: string;
 	Description!: string;
 	Price!: number;

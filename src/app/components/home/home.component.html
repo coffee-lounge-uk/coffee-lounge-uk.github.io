@@ -10,8 +10,7 @@
           <div class="slideshow-slide">
             <div 
               class="bg-white rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto cursor-pointer hover:shadow-2xl transition-shadow"
-              [routerLink]="['/item', special.Name.toLowerCase().replace(' ', '-')]"
-              [state]="special"
+							(click)="goToItem(special.Id)"
             >
               <div class="w-full">
                 <img [src]="special.ImagePath" [alt]="special.Name" class="slideshow-image">

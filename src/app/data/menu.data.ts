@@ -10,7 +10,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.BreakFast,
 		IsSpecial: true,
 		ImagePath: "assets/images/b1.jpeg",
-		id: 0
+		Id: 1
 	},
 	{
 		Name: "Chicken Sandwich with (Drink/Coffee)",
@@ -19,7 +19,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
 		ImagePath: "assets/images/b1.jpeg",
-		id: 0
+		Id: 2
 	},
 	{
 		Name: "Parata (Lamb + Dal) with (Drink/Coffee/Tea)",
@@ -28,7 +28,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
 		ImagePath: "assets/images/b1.jpeg",
-		id: 0
+		Id: 3
 	},
 	{
 		Name: "Parata (Egg + Dal) with (Drink/Coffee/Tea)",
@@ -37,7 +37,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
 		ImagePath: "assets/images/b1.jpeg",
-		id: 0
+		Id: 4
 	},
 	{
 		Name: "English Breakfast (Toast + Beans + Eggs + Sausage)",
@@ -46,7 +46,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
 		ImagePath: "assets/images/b1.jpeg",
-		id: 0
+		Id: 5
 	},
 
 	// Lunch Special
@@ -57,7 +57,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.LunchSpecial,
 		IsSpecial: true,
 		ImagePath: "assets/images/ls1.jpeg",
-		id: 0
+		Id: 6
 	},
 	{
 		Name: "Noodles With Chicken",
@@ -66,7 +66,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.LunchSpecial,
 		IsSpecial: false,
 		ImagePath: "assets/images/ls1.jpeg",
-		id: 0
+		Id: 7
 	},
 
 	// Salad
@@ -77,7 +77,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.Salad,
 		IsSpecial: true,
 		ImagePath: "assets/images/sal1.jpeg",
-		id: 0
+		Id: 8
 	},
 	{
 		Name: "Cashewnut Salad",
@@ -86,7 +86,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.Salad,
 		IsSpecial: false,
 		ImagePath: "assets/images/sal1.jpeg",
-		id: 0
+		Id: 9
 	},
 	{
 		Name: "Protein Salad",
@@ -95,7 +95,7 @@ export const MenuItems: MenuItem[] = [
 		Category: MenuCategory.Salad,
 		IsSpecial: false,
 		ImagePath: "assets/images/sal1.jpeg",
-		id: 0
+		Id: 10
 	},
 
 	// Snacks
@@ -106,61 +106,61 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: true,
 		Category: MenuCategory.Snacks,
 		ImagePath: "assets/images/sn1.jpeg",
-		id: 0
+		Id: 11
 	},
-  {
+	{
 		Name: 'Pastry (Vegetable/Chicken/Cheese & Onion)',
 		Description: 'Delicious pastry filled with Onino and mixed vegetables or chicken or cheese.',
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
 		ImagePath: "assets/images/sn1.jpeg",
-		id: 0
+		Id: 12
 	},
-  {
+	{
 		Name: 'Shingara (1pc)',
 		Description: 'Crispy, triangular pastry filled with spiced potatoes and peas.',
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
 		ImagePath: "assets/images/sn1.jpeg",
-		id: 0
+		Id: 13
 	},
-  {
+	{
 		Name: 'Spring Roll (Vegetable each)',
 		Description: 'Crispy spring roll filled with fresh vegetables.',
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
 		ImagePath: "assets/images/sn1.jpeg",
-		id: 0
+		Id: 14
 	},
-  {
+	{
 		Name: 'Cake (Slice)',
 		Description: 'A slice of moist, freshly baked cake.',
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
 		ImagePath: "assets/images/sn1.jpeg",
-		id: 0
+		Id: 15
 	},
-  {
+	{
 		Name: 'Muffin',
 		Description: 'Soft and fluffy muffin, perfect for a quick snack.',
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
 		ImagePath: "assets/images/sn1.jpeg",
-		id: 0
+		Id: 16
 	},
-  {
+	{
 		Name: 'Milk Cake (Slice)',
 		Description: 'Rich and creamy milk cake slice.',
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
 		ImagePath: "assets/images/sn1.jpeg",
-		id: 0
+		Id: 17
 	},
 
 	// Desserts
@@ -171,7 +171,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: true,
 		Category: MenuCategory.Desserts,
 		ImagePath: "assets/images/d1.jpeg",
-		id: 0
+		Id: 18
 	},
 	{
 		Name: 'SWEET YOGURT',
@@ -180,7 +180,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Desserts,
 		ImagePath: "assets/images/d1.jpeg",
-		id: 0
+		Id: 19
 	},
 	{
 		Name: 'MILKCAKE',
@@ -189,7 +189,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Desserts,
 		ImagePath: "assets/images/d1.jpeg",
-		id: 0
+		Id: 20
 	},
 
 	// Drinks
@@ -200,52 +200,52 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr5.jpeg',
-		id: 0
+		Id: 21
 	},
-  {
+	{
 		Name: 'RUBICON CAN (330ml)',
 		Description: 'A delicious Rubicon drink in a 330ml can, perfect for any time of the day.',
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr5.jpeg',
-		id: 0
+		Id: 22
 	},
-  {
+	{
 		Name: '7UP CAN',
 		Description: 'A crisp and refreshing 7UP soft drink in a 330ml can.',
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr5.jpeg',
-		id: 0
+		Id: 23
 	},
-  {
+	{
 		Name: 'WATER (500ml)',
 		Description: 'Pure and refreshing water in a 500ml bottle.',
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr5.jpeg',
-		id: 0
+		Id: 24
 	},
-  {
+	{
 		Name: 'RED BULL (330ml)',
 		Description: 'An energizing Red Bull drink in a 330ml can.',
 		Price: 1.80,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr5.jpeg',
-		id: 0
+		Id: 25
 	},
-  {
+	{
 		Name: 'JUICE BOTTLE (500ml)',
 		Description: 'Freshly made juice in a 500ml bottle.',
 		Price: 1.99,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr5.jpeg',
-		id: 0
+		Id: 26
 	},
 
 	// Smoothie
@@ -256,25 +256,25 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Smoothie,
 		ImagePath: 'assets/images/sm1.jpeg',
-		id: 0
+		Id: 27
 	},
-  {
+	{
 		Name: 'MILKSHAKE (Mango, Banana, Strawberry)',
 		Description: 'A creamy milkshake made with your choice of Mango, Banana, or Strawberry.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Smoothie,
 		ImagePath: 'assets/images/sm1.jpeg',
-		id: 0
+		Id: 28
 	},
-  {
+	{
 		Name: 'AVOCADO YOGURT',
 		Description: 'A healthy and smooth blend of avocado and yogurt.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Smoothie,
 		ImagePath: 'assets/images/sm1.jpeg',
-		id: 0
+		Id: 29
 	},
 
 	// Juice
@@ -285,52 +285,52 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
 		ImagePath: 'assets/images/j1.jpeg',
-		id: 0
+		Id: 30
 	},
-  {
+	{
 		Name: 'FRESH APPLE JUICE',
 		Description: 'A crisp and naturally sweet fresh apple juice.',
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
 		ImagePath: 'assets/images/j1.jpeg',
-		id: 0
+		Id: 31
 	},
-  {
+	{
 		Name: 'FRESH PAPAYA JUICE',
 		Description: 'A smooth and tropical papaya juice made from fresh papayas.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
 		ImagePath: 'assets/images/j1.jpeg',
-		id: 0
+		Id: 32
 	},
-  {
+	{
 		Name: 'CARROT JUICE',
 		Description: 'A healthy and refreshing carrot juice with a natural sweetness.',
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
 		ImagePath: 'assets/images/j1.jpeg',
-		id: 0
+		Id: 33
 	},
-  {
+	{
 		Name: 'MANGO JUICE',
 		Description: 'A rich and creamy mango juice made from fresh mangoes.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
 		ImagePath: 'assets/images/j1.jpeg',
-		id: 0
+		Id: 34
 	},
-  {
+	{
 		Name: 'MIX JUICE',
 		Description: 'A delicious mix of various fresh fruits to make a refreshing juice.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
 		ImagePath: 'assets/images/j1.jpeg',
-		id: 0
+		Id: 35
 	},
 
 	// Coffe
@@ -341,61 +341,61 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
 		ImagePath: 'assets/images/c3.jpeg',
-		id: 0
+		Id: 36
 	},
-  {
+	{
 		Name: 'MACCHIATO',
 		Description: 'A bold espresso topped with a touch of steamed milk.',
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
 		ImagePath: 'assets/images/c3.jpeg',
-		id: 0
+		Id: 37
 	},
-  {
+	{
 		Name: 'CAPPUCCINO',
 		Description: 'A classic coffee made with espresso, steamed milk, and foam.',
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
 		ImagePath: 'assets/images/c3.jpeg',
-		id: 0
+		Id: 38
 	},
-  {
+	{
 		Name: 'LATTE',
 		Description: 'A smooth and creamy coffee made with espresso and steamed milk.',
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
 		ImagePath: 'assets/images/c3.jpeg',
-		id: 0
+		Id: 39
 	},
-  {
+	{
 		Name: 'AMERICANO',
 		Description: 'A simple yet satisfying espresso diluted with hot water.',
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
 		ImagePath: 'assets/images/c3.jpeg',
-		id: 0
+		Id: 40
 	},
-  {
+	{
 		Name: 'MOCHA',
 		Description: 'A decadent blend of espresso, steamed milk, and chocolate.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
 		ImagePath: 'assets/images/c3.jpeg',
-		id: 0
+		Id: 41
 	},
-  {
+	{
 		Name: 'HOT CHOCOLATE',
 		Description: 'A warm and comforting drink made with rich chocolate.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
 		ImagePath: 'assets/images/c3.jpeg',
-		id: 0
+		Id: 42
 	},
 
 	// Tea
@@ -406,43 +406,43 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
 		ImagePath: 'assets/images/t4.jpeg',
-		id: 0
+		Id: 43
 	},
-  {
+	{
 		Name: 'ENGLISH TEA',
 		Description: 'A classic, traditional tea with a strong and smooth flavor.',
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
 		ImagePath: 'assets/images/t4.jpeg',
-		id: 0
+		Id: 44
 	},
-  {
+	{
 		Name: 'GREEN TEA',
 		Description: 'A refreshing and healthy tea with a light, earthy flavor.',
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
 		ImagePath: 'assets/images/t4.jpeg',
-		id: 0
+		Id: 45
 	},
-  {
+	{
 		Name: 'HERBAL TEA (Mint, Lemon, Ginger)',
 		Description: 'A soothing herbal blend with your choice of Mint, Lemon, or Ginger.',
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
 		ImagePath: 'assets/images/t4.jpeg',
-		id: 0
+		Id: 46
 	},
-  {
+	{
 		Name: 'MASALA TEA',
 		Description: 'A fragrant and spiced tea with a rich blend of spices.',
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
 		ImagePath: 'assets/images/t4.jpeg',
-		id: 0
+		Id: 47
 	},
 
 	// Sandwiches
@@ -453,52 +453,52 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa2.jpeg',
-		id: 0
+		Id: 51
 	},
-  {
+	{
 		Name: 'CHICKEN SANDWICH',
 		Description: 'A delicious chicken sandwich with fresh ingredients and a savory filling.',
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa2.jpeg',
-		id: 0
+		Id: 52
 	},
-  {
+	{
 		Name: 'CHICKEN SHAWARMA',
 		Description: 'A flavorful chicken shawarma wrapped with spices and fresh veggies.',
 		Price: 4.00,
 		IsSpecial: true,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa2.jpeg',
-		id: 0
+		Id: 53
 	},
-  {
+	{
 		Name: 'CHICKEN WRAP',
 		Description: 'A tasty chicken wrap with crispy chicken and fresh salad.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa2.jpeg',
-		id: 0
+		Id: 54
 	},
-  {
+	{
 		Name: 'PANINI (Chicken, Salad)',
 		Description: 'A warm and toasted panini filled with chicken and crisp salad.',
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa2.jpeg',
-		id: 0
+		Id: 55
 	},
-  {
+	{
 		Name: 'CHEESY CHICKEN BURGER',
 		Description: 'A juicy chicken burger with melted cheese and fresh toppings.',
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa2.jpeg',
-		id: 0
+		Id: 56
 	},
 
 	// Bangladeshi Street Food
@@ -509,7 +509,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: true,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf1.jpeg',
-		id: 0
+		Id: 57
 	},
   {
 		Name: 'CHOTPOTI (large)',
@@ -518,7 +518,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf1.jpeg',
-		id: 0
+		Id: 58
 	},
   {
 		Name: 'FUSKA (6 piece)',
@@ -527,7 +527,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: true,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf2.jpeg',
-		id: 0
+		Id: 59
 	},
   {
 		Name: 'FUSKA (10 piece)',
@@ -536,7 +536,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf1.jpeg',
-		id: 0
+		Id: 60
 	},
   {
 		Name: 'PIAJU (3 PC)',
@@ -545,7 +545,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf1.jpeg',
-		id: 0
+		Id: 61
 	},
   {
 		Name: 'PITHA (1 PC)',
@@ -554,6 +554,6 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf1.jpeg',
-		id: 0
+		Id: 62
 	},
 ];
