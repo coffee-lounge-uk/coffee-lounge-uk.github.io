@@ -2,11 +2,12 @@ import { MenuService } from './../../services/menu.service';
 import { Component } from '@angular/core';
 import { MenuItem } from '../../interfaces/menu-item.interface';
 import { ActivatedRoute, Router } from '@angular/router';
+import { OrderComponent } from "../order/order.component";
 
 @Component({
   selector: 'app-item-detail',
   standalone: true,
-  imports: [],
+  imports: [OrderComponent],
   templateUrl: './item-detail.component.html',
   styleUrl: './item-detail.component.scss'
 })
