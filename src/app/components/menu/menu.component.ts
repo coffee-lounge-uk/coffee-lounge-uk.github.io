@@ -4,11 +4,12 @@ import { MenuCategoryItem } from '../../interfaces/menu-category-item.interface'
 import { MenuItem } from '../../interfaces/menu-item.interface';
 import { MenuService } from '../../services/menu.service';
 import { Router, RouterModule } from '@angular/router';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CurrencyPipe],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })

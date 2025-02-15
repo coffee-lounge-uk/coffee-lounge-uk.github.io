@@ -1,7 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { MenuItem } from '../../interfaces/menu-item.interface';
 import { MenuService } from '../../services/menu.service';
-import { CommonModule } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { MenuCategoryItem } from '../../interfaces/menu-category-item.interface';
 import { MenuCategory } from '../../enums/menu-category.enum';
@@ -12,7 +12,7 @@ import { AboutComponent } from "../about/about.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, MenuComponent, AboutComponent],
+  imports: [CommonModule, RouterModule, MenuComponent, AboutComponent, CurrencyPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

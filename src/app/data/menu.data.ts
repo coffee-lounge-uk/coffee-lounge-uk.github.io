@@ -18,7 +18,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
-		ImagePath: "assets/images/b1.jpeg",
+		ImagePath: "assets/images/b2.jpeg",
 		Id: 2
 	},
 	{
@@ -27,7 +27,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 5.00,
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
-		ImagePath: "assets/images/b1.jpeg",
+		ImagePath: "assets/images/b3.jpeg",
 		Id: 3
 	},
 	{
@@ -36,7 +36,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 4.00,
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
-		ImagePath: "assets/images/b1.jpeg",
+		ImagePath: "assets/images/b4.jpeg",
 		Id: 4
 	},
 	{
@@ -45,7 +45,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 6.00,
 		Category: MenuCategory.BreakFast,
 		IsSpecial: false,
-		ImagePath: "assets/images/b1.jpeg",
+		ImagePath: "assets/images/b5.jpeg",
 		Id: 5
 	},
 
@@ -65,7 +65,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.50,
 		Category: MenuCategory.LunchSpecial,
 		IsSpecial: false,
-		ImagePath: "assets/images/ls1.jpeg",
+		ImagePath: "assets/images/ls2.jpeg",
 		Id: 7
 	},
 
@@ -85,7 +85,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		Category: MenuCategory.Salad,
 		IsSpecial: false,
-		ImagePath: "assets/images/sal1.jpeg",
+		ImagePath: "assets/images/sal2.jpeg",
 		Id: 9
 	},
 	{
@@ -94,7 +94,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		Category: MenuCategory.Salad,
 		IsSpecial: false,
-		ImagePath: "assets/images/sal1.jpeg",
+		ImagePath: "assets/images/sal3.jpeg",
 		Id: 10
 	},
 
@@ -114,7 +114,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
-		ImagePath: "assets/images/sn1.jpeg",
+		ImagePath: "assets/images/sn2.jpeg",
 		Id: 12
 	},
 	{
@@ -123,7 +123,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
-		ImagePath: "assets/images/sn1.jpeg",
+		ImagePath: "assets/images/sn3.jpeg",
 		Id: 13
 	},
 	{
@@ -132,7 +132,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
-		ImagePath: "assets/images/sn1.jpeg",
+		ImagePath: "assets/images/sn4.jpeg",
 		Id: 14
 	},
 	{
@@ -141,7 +141,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
-		ImagePath: "assets/images/sn1.jpeg",
+		ImagePath: "assets/images/sn5.jpeg",
 		Id: 15
 	},
 	{
@@ -150,7 +150,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
-		ImagePath: "assets/images/sn1.jpeg",
+		ImagePath: "assets/images/sn6.jpeg",
 		Id: 16
 	},
 	{
@@ -159,7 +159,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Snacks,
-		ImagePath: "assets/images/sn1.jpeg",
+		ImagePath: "assets/images/sn7.jpeg",
 		Id: 17
 	},
 
@@ -179,7 +179,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Desserts,
-		ImagePath: "assets/images/d1.jpeg",
+		ImagePath: "assets/images/d2.jpeg",
 		Id: 19
 	},
 	{
@@ -188,7 +188,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Desserts,
-		ImagePath: "assets/images/d1.jpeg",
+		ImagePath: "assets/images/d3.jpeg",
 		Id: 20
 	},
 
@@ -199,7 +199,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
-		ImagePath: 'assets/images/dr5.jpeg',
+		ImagePath: 'assets/images/dr1.jpeg',
 		Id: 21
 	},
 	{
@@ -208,7 +208,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
-		ImagePath: 'assets/images/dr5.jpeg',
+		ImagePath: 'assets/images/dr2.jpeg',
 		Id: 22
 	},
 	{
@@ -217,7 +217,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
-		ImagePath: 'assets/images/dr5.jpeg',
+		ImagePath: 'assets/images/dr3.jpeg',
 		Id: 23
 	},
 	{
@@ -226,7 +226,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
-		ImagePath: 'assets/images/dr5.jpeg',
+		ImagePath: 'assets/images/dr4.jpeg',
 		Id: 24
 	},
 	{
@@ -244,7 +244,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.99,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
-		ImagePath: 'assets/images/dr5.jpeg',
+		ImagePath: 'assets/images/dr6.jpeg',
 		Id: 26
 	},
 
@@ -264,7 +264,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Smoothie,
-		ImagePath: 'assets/images/sm1.jpeg',
+		ImagePath: 'assets/images/sm2.jpeg',
 		Id: 28
 	},
 	{
@@ -273,7 +273,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Smoothie,
-		ImagePath: 'assets/images/sm1.jpeg',
+		ImagePath: 'assets/images/sm3.jpeg',
 		Id: 29
 	},
 
@@ -293,7 +293,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
-		ImagePath: 'assets/images/j1.jpeg',
+		ImagePath: 'assets/images/j2.jpeg',
 		Id: 31
 	},
 	{
@@ -302,7 +302,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
-		ImagePath: 'assets/images/j1.jpeg',
+		ImagePath: 'assets/images/j3.jpeg',
 		Id: 32
 	},
 	{
@@ -311,7 +311,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
-		ImagePath: 'assets/images/j1.jpeg',
+		ImagePath: 'assets/images/j4.jpeg',
 		Id: 33
 	},
 	{
@@ -320,7 +320,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
-		ImagePath: 'assets/images/j1.jpeg',
+		ImagePath: 'assets/images/j5.jpeg',
 		Id: 34
 	},
 	{
@@ -329,7 +329,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Juice,
-		ImagePath: 'assets/images/j1.jpeg',
+		ImagePath: 'assets/images/j6.jpeg',
 		Id: 35
 	},
 
@@ -340,7 +340,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
-		ImagePath: 'assets/images/c3.jpeg',
+		ImagePath: 'assets/images/c1.jpeg',
 		Id: 36
 	},
 	{
@@ -349,7 +349,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
-		ImagePath: 'assets/images/c3.jpeg',
+		ImagePath: 'assets/images/c2.jpeg',
 		Id: 37
 	},
 	{
@@ -367,7 +367,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
-		ImagePath: 'assets/images/c3.jpeg',
+		ImagePath: 'assets/images/c4.jpeg',
 		Id: 39
 	},
 	{
@@ -376,7 +376,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
-		ImagePath: 'assets/images/c3.jpeg',
+		ImagePath: 'assets/images/c5.jpeg',
 		Id: 40
 	},
 	{
@@ -385,7 +385,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
-		ImagePath: 'assets/images/c3.jpeg',
+		ImagePath: 'assets/images/c6.jpeg',
 		Id: 41
 	},
 	{
@@ -394,7 +394,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Coffe,
-		ImagePath: 'assets/images/c3.jpeg',
+		ImagePath: 'assets/images/c7.jpeg',
 		Id: 42
 	},
 
@@ -405,7 +405,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
-		ImagePath: 'assets/images/t4.jpeg',
+		ImagePath: 'assets/images/t1.jpeg',
 		Id: 43
 	},
 	{
@@ -414,7 +414,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
-		ImagePath: 'assets/images/t4.jpeg',
+		ImagePath: 'assets/images/t2.jpeg',
 		Id: 44
 	},
 	{
@@ -423,7 +423,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
-		ImagePath: 'assets/images/t4.jpeg',
+		ImagePath: 'assets/images/t3.jpeg',
 		Id: 45
 	},
 	{
@@ -441,7 +441,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.50,
 		IsSpecial: false,
 		Category: MenuCategory.Tea,
-		ImagePath: 'assets/images/t4.jpeg',
+		ImagePath: 'assets/images/t5.jpeg',
 		Id: 47
 	},
 
@@ -452,7 +452,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.00,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
-		ImagePath: 'assets/images/sa2.jpeg',
+		ImagePath: 'assets/images/sa1.jpeg',
 		Id: 51
 	},
 	{
@@ -470,7 +470,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 4.00,
 		IsSpecial: true,
 		Category: MenuCategory.Sandwiches,
-		ImagePath: 'assets/images/sa2.jpeg',
+		ImagePath: 'assets/images/sa3.jpeg',
 		Id: 53
 	},
 	{
@@ -479,7 +479,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
-		ImagePath: 'assets/images/sa2.jpeg',
+		ImagePath: 'assets/images/sa4.jpeg',
 		Id: 54
 	},
 	{
@@ -488,7 +488,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 3.00,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
-		ImagePath: 'assets/images/sa2.jpeg',
+		ImagePath: 'assets/images/sa5.jpeg',
 		Id: 55
 	},
 	{
@@ -497,7 +497,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 2.50,
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
-		ImagePath: 'assets/images/sa2.jpeg',
+		ImagePath: 'assets/images/sa6.jpeg',
 		Id: 56
 	},
 
@@ -535,7 +535,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 5.00,
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
-		ImagePath: 'assets/images/bsf1.jpeg',
+		ImagePath: 'assets/images/bsf2.jpeg',
 		Id: 60
 	},
   {
@@ -544,7 +544,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
-		ImagePath: 'assets/images/bsf1.jpeg',
+		ImagePath: 'assets/images/bsf3.jpeg',
 		Id: 61
 	},
   {
@@ -553,7 +553,7 @@ export const MenuItems: MenuItem[] = [
 		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
-		ImagePath: 'assets/images/bsf1.jpeg',
+		ImagePath: 'assets/images/bsf4.jpeg',
 		Id: 62
 	},
 ];

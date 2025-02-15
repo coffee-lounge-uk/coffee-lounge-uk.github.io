@@ -1,68 +1,88 @@
-.about {
-  background-color: #f9fafb; // Light background for the section
-  padding: 4rem 0; // Spacing around the section
+.about-section {
+	margin-top: 50px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 
-  .container {
-    max-width: 1200px; // Limit container width
-    margin: 0 auto; // Center the container
-  }
-
-  h2 {
-    font-family: 'Playfair Display', serif; // Example of a display font
-    color: #4c1d95; // Deep purple color
-    margin-bottom: 1.5rem; // Spacing below headings
+  h2, h3 {
+    font-weight: 600;
   }
 
   p {
-    color: #6b7280; // Muted text color
-    line-height: 1.6; // Improve readability
+    font-size: 16px;
+    color: #4B5563;
   }
 
-  .bg-white {
-    background-color: #ffffff; // White background for the "Visit Us" section
-    border-radius: 12px; // Rounded corners
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Soft shadow
-    padding: 2rem; // Inner spacing
-  }
+  .contact-details {
+    margin-bottom: 20px;
 
-  .custom-icon {
-    width: 24px; // Icon size
-    height: 24px;
-    filter: invert(24%) sepia(14%) saturate(2000%) hue-rotate(231deg) brightness(90%) contrast(90%); // Purple color for icons
-  }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
 
-  a {
-    text-decoration: none; // Remove underline from links
-    transition: all 0.3s ease; // Smooth hover effect
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
 
-    &:hover {
-      opacity: 0.9; // Slight fade on hover
-    }
-  }
+      a {
+        color: #6B21A8;
+        text-decoration: none;
+        font-weight: 500;
 
-  .bg-purple-600 {
-    background-color: #7c3aed; // Purple button color
-    &:hover {
-      background-color: #6d28d9; // Darker purple on hover
-    }
-  }
-
-  .bg-green-600 {
-    background-color: #16a34a; // Green button color
-    &:hover {
-      background-color: #15803d; // Darker green on hover
-    }
-  }
-
-  .social-links {
-    img {
-      width: 32px; // Social media icon size
-      height: 32px;
-      transition: opacity 0.3s ease; // Smooth hover effect
-
-      &:hover {
-        opacity: 0.75; // Slight fade on hover
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
+  }
+
+  .order-online {
+    margin-bottom: 20px;
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #6B21A8;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #4C1D95;
+      }
+    }
+  }
+
+  .social-media {
+    margin-bottom: 20px;
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      
+      a img {
+        width: 32px;
+        height: 32px;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .location iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
   }
 }

@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { MenuItem } from '../../interfaces/menu-item.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { OrderComponent } from "../order/order.component";
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-item-detail',
   standalone: true,
-  imports: [OrderComponent],
+  imports: [OrderComponent, CurrencyPipe ],
   templateUrl: './item-detail.component.html',
   styleUrl: './item-detail.component.scss'
 })

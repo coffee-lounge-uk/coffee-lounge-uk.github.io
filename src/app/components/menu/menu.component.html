@@ -18,7 +18,7 @@
                 <h3 class="font-display text-lg text-purple-900">{{ item.Name }}</h3>
                 <span class="font-medium text-green-600">{{ item.Description }}</span>
               </div>
-              <p class="text-sm text-muted-foreground">£ {{ item.Price }}</p>
+              <p class="text-sm text-muted-foreground">{{ item.Price | currency: 'GBP':'symbol':'1.2-2' }}</p>
             </div>
           </div>
         }

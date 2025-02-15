@@ -20,7 +20,7 @@
                   <h3 class="font-display text-xl text-purple-900">{{ special.Name }}</h3>
                   <span class="text-lg font-medium text-green-600">{{ special.Description }}</span>
                 </div>
-                <p class="text-muted-foreground">£ {{ special.Price }}</p>
+                <p class="text-muted-foreground">{{ special.Price | currency: 'GBP':'symbol':'1.2-2' }}</p>
               </div>
             </div>
           </div>
