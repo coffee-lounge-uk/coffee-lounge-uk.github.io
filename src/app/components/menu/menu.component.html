@@ -1,15 +1,28 @@
-<section class="menu">
-  <h2>Our Menu</h2>
-  <div class="menu-item">
-    <h3>Espresso</h3>
-    <p>Strong and rich espresso shot.</p>
-  </div>
-  <div class="menu-item">
-    <h3>Cappuccino</h3>
-    <p>Espresso with steamed milk and foam.</p>
-  </div>
-  <div class="menu-item">
-    <h3>Latte</h3>
-    <p>Espresso with steamed milk.</p>
-  </div>
-</section>
+  <!-- Menu Categories -->
+  @for (category of menuCategories; track category.Name) {
+    <section class="mb-16">
+      <h2 class="font-display text-2xl md:text-3xl mb-6 text-center text-purple-800">
+        {{ category.Name }}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        @for (item of getCategoryItems(category.Name); track item.Name) {
+          <div 
+            class="bg-white rounded-lg shadow-xl overflow-hidden cursor-pointer hover:shadow-2xl transition-all hover:-translate-y-1"
+            [routerLink]="['/item', item.Name.toLowerCase().replace(' ', '-')]"
+            [state]="item"
+          >
+            <div class="aspect-video w-full">
+              <img [src]="item.ImagePath" [alt]="item.Name" class="object-cover">
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-display text-lg text-purple-900">{{ item.Name }}</h3>
+                <span class="font-medium text-green-600">{{ item.Description }}</span>
+              </div>
+              <p class="text-sm text-muted-foreground">£ {{ item.Price }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+  }

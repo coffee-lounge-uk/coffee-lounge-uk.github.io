@@ -24,7 +24,7 @@ export class MenuService {
 	}
 
   getCategories(): MenuCategoryItem[] { 
-		return MenuCategoryItems;;
+		return MenuCategoryItems;
 	}
 
   getItemByName(name: string): MenuItem | undefined { 

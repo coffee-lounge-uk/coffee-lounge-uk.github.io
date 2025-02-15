@@ -32,6 +32,10 @@
             "styles": [
               "src/styles.scss"
             ],
+						"postcss": {
+              "options": {
+                "config": "./postcss.config.js"
+              },
             "scripts": []
           },
           "configurations": {

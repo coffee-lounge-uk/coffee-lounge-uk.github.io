@@ -5,18 +5,21 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MenuCategoryItem } from '../../interfaces/menu-category-item.interface';
 import { MenuCategory } from '../../enums/menu-category.enum';
+import { MenuComponent } from "../menu/menu.component";
+import { FooterComponent } from "../footer/footer.component";
+import { AboutComponent } from "../about/about.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, MenuComponent, AboutComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
 	specials: MenuItem[] = [];
   menuCategories: MenuCategoryItem[] = [];
-  currentSpecialIndex = signal(0);
+  currentSpecialIndex: number = 0;
   private intervalId: any;
 
   constructor(private menuService: MenuService) {}
@@ -41,18 +44,10 @@ export class HomeComponent implements OnInit {
   }
 
   prevSlide() {
-    this.currentSpecialIndex.update(value => 
-      value === 0 ? this.specials.length - 1 : value - 1
-    );
+		this.currentSpecialIndex = (this.currentSpecialIndex + this.specials.length - 1) % this.specials.length;
   }
 
   nextSlide() {
-    this.currentSpecialIndex.update(value => 
-      (value + 1) % this.specials.length
-    );
+		this.currentSpecialIndex = (this.currentSpecialIndex + 1) % this.specials.length;
   }
-
-	getCategoryItems(category: MenuCategory): MenuItem[] {
-		return this.menuService.GetItemsByCategory(category);
-	}
 }

@@ -1,0 +1,45 @@
+header {
+  background-color: #f4f4f4; // Fallback for older browsers
+  backdrop-filter: blur(10px); // Adds the blur effect
+  padding: 1rem 0; // Default padding
+  margin-bottom: 2rem; // Default margin
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); // Soft shadow
+
+  .container {
+    max-width: 1200px; // Adjust container width
+    margin: 0 auto;
+    padding: 0 1rem; // Default padding
+
+    .text-center {
+      cursor: pointer;
+
+      h1 {
+        font-family: 'Playfair Display', serif; // Example of a display font
+        font-size: 2.5rem; // Default font size for mobile
+        line-height: 1.2;
+        color: #4c1d95; // Deep purple color
+        margin-bottom: 1rem; // Spacing below the heading
+
+        @media (min-width: 768px) {
+          font-size: 3.5rem; // Larger font size for tablets and desktops
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 4rem; // Even larger font size for larger screens
+        }
+      }
+
+      p {
+        color: #6b7280; // Muted text color
+        max-width: 42rem; // Limit paragraph width for readability
+        margin: 0 auto; // Center the paragraph
+        font-size: 1rem; // Default font size for mobile
+        line-height: 1.5;
+
+        @media (min-width: 768px) {
+          font-size: 1.125rem; // Slightly larger font size for tablets and desktops
+        }
+      }
+    }
+  }
+}
