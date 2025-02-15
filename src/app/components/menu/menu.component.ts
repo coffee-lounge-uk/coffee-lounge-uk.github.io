@@ -16,6 +16,7 @@ import { CurrencyPipe } from '@angular/common';
 export class MenuComponent implements OnInit {
 	items: MenuItem[] = [];
 	menuCategories: MenuCategoryItem[] = [];
+	selectedCategory: MenuCategoryItem | null = null;
 
 	constructor(private router: Router, private menuService: MenuService) {}
 
@@ -24,11 +25,18 @@ export class MenuComponent implements OnInit {
 		this.menuCategories = this.menuService.getCategories();
 	}
 
+	get CurrentMenuCategories(): MenuCategoryItem[] {
+		return this.selectedCategory ? [this.selectedCategory] : this.menuCategories;
+	}
+
+	toggleCategory(category: MenuCategoryItem): void {
+		this.selectedCategory = this.selectedCategory?.Name === category.Name ? null : category;
+	}
+
 	getCategoryItems(category: MenuCategory): MenuItem[] {
 		return this.items.filter(item => item.Category === category);
 	}
 
-	
 	goToItem(id: number) {
 		console.log("going to item", id);
 		this.router.navigate([`/item/${id}`]);
