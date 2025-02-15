@@ -453,7 +453,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa1.jpeg',
-		Id: 51
+		Id: 48
 	},
 	{
 		Name: 'CHICKEN SANDWICH',
@@ -462,7 +462,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa2.jpeg',
-		Id: 52
+		Id: 49
 	},
 	{
 		Name: 'CHICKEN SHAWARMA',
@@ -471,7 +471,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: true,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa3.jpeg',
-		Id: 53
+		Id: 50
 	},
 	{
 		Name: 'CHICKEN WRAP',
@@ -480,7 +480,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa4.jpeg',
-		Id: 54
+		Id: 51
 	},
 	{
 		Name: 'PANINI (Chicken, Salad)',
@@ -489,7 +489,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa5.jpeg',
-		Id: 55
+		Id: 52
 	},
 	{
 		Name: 'CHEESY CHICKEN BURGER',
@@ -498,7 +498,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.Sandwiches,
 		ImagePath: 'assets/images/sa6.jpeg',
-		Id: 56
+		Id: 53
 	},
 
 	// Bangladeshi Street Food
@@ -509,7 +509,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: true,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf1.jpeg',
-		Id: 57
+		Id: 54
 	},
   {
 		Name: 'CHOTPOTI (large)',
@@ -518,7 +518,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf1.jpeg',
-		Id: 58
+		Id: 55
 	},
   {
 		Name: 'FUSKA (6 piece)',
@@ -527,7 +527,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: true,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf2.jpeg',
-		Id: 59
+		Id: 56
 	},
   {
 		Name: 'FUSKA (10 piece)',
@@ -536,7 +536,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf2.jpeg',
-		Id: 60
+		Id: 57
 	},
   {
 		Name: 'PIAJU (3 PC)',
@@ -545,7 +545,7 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf3.jpeg',
-		Id: 61
+		Id: 58
 	},
   {
 		Name: 'PITHA (1 PC)',
@@ -554,6 +554,6 @@ export const MenuItems: MenuItem[] = [
 		IsSpecial: false,
 		Category: MenuCategory.BangladeshiStreetFood,
 		ImagePath: 'assets/images/bsf4.jpeg',
-		Id: 62
+		Id: 59
 	},
 ];
