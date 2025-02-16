@@ -141,15 +141,15 @@ button {
       width: calc(25% - 24px); // 100%/4 - gap
     }
 
-    // Small screens: 2 items per row (12/2=6 rows)
-    @media (max-width: 767px) and (min-width: 480px) {
-      width: calc(50% - 24px); // 100%/2 - gap
-    }
+		// Small tablets / larger mobiles: 3 items per row (4 rows)
+		@media (min-width: 481px) and (max-width: 767px) {
+			width: calc(33.333% - 24px);
+		}
 
-    // Extra small: 1 item per row (12 rows)
-    @media (max-width: 479px) {
-      width: calc(100% - 24px);
-    }
+		// Smallest screens: 2 items per row (6 rows)
+    @media (max-width: 480px) {
+			width: calc(50% - 24px);
+		}
 
     // Existing styles remain
     display: flex;
