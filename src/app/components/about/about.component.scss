@@ -86,3 +86,29 @@
     border-radius: 12px;
   }
 }
+
+.uber-eats-button {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 14px;
+	background-color: #6B21A8;
+	color: white;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: background 0.3s ease-in-out;
+	box-sizing: border-box; // Ensures padding doesn't cause overflow
+
+	&:hover {
+		background-color: #4C1D95;
+	}
+
+	img {
+		width: 24px;
+		height: 24px;
+		margin-right: 10px;
+	}
+}
