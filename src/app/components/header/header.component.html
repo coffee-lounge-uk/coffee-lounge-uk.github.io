@@ -1,15 +1,34 @@
 <header class="bg-white/80 backdrop-blur-sm py-6 mb-8 shadow-sm">
-	<div class="container mx-auto px-4">
-		<div 
-			class="text-center cursor-pointer"
-			(click)="navigateHome()"
-		>
-			<h1 class="font-display text-4xl md:text-5xl mb-4 text-purple-900">
-				Coffee Lounge
-			</h1>
-			<p class="text-muted-foreground max-w-2xl mx-auto">
-				Your cozy corner for delicious drinks, snacks, and authentic Bangladeshi street food
-			</p>
-		</div>
-	</div>
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center">
+      <!-- Left side - Logo/Title -->
+      <div 
+        class="text-center cursor-pointer flex-1"
+        (click)="navigateHome()"
+      >
+        <h1 class="font-display text-4xl md:text-5xl mb-4 text-purple-900">
+          Coffee Lounge
+        </h1>
+        <p class="text-muted-foreground max-w-2xl mx-auto">
+          Your cozy corner for delicious drinks, snacks, and authentic Bangladeshi street food
+        </p>
+      </div>
+
+      <button 
+				class="order-button bg-gradient-to-r from-purple-600 to-teal-500 text-white px-10 py-4 rounded-xl 
+							hover:from-purple-700 hover:to-teal-600 transition-all duration-300 shadow-2xl hover:shadow-3xl 
+							relative overflow-hidden text-lg md:text-xl font-bold"
+				(click)="navigateOrder()"
+			>
+				<span class="relative z-10 flex items-center gap-2">
+					<img 
+						src="assets/svg/shop.svg" 
+						alt="order now"
+						class="w-8 h-8 mx-auto mb-2"
+					>
+					Order Now
+				</span>
+			</button>
+    </div>
+  </div>
 </header>

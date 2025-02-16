@@ -1,45 +1,165 @@
 header {
-  background-color: #f4f4f4; // Fallback for older browsers
-  backdrop-filter: blur(10px); // Adds the blur effect
-  padding: 1rem 0; // Default padding
-  margin-bottom: 2rem; // Default margin
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); // Soft shadow
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
 
   .container {
-    max-width: 1200px; // Adjust container width
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem; // Default padding
+    padding: 0 1rem;
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
 
     .text-center {
       cursor: pointer;
+      flex: 1;
+      text-align: left;
 
       h1 {
-        font-family: 'Playfair Display', serif; // Example of a display font
-        font-size: 2.5rem; // Default font size for mobile
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
         line-height: 1.2;
-        color: #4c1d95; // Deep purple color
-        margin-bottom: 1rem; // Spacing below the heading
+        color: #4c1d95;
+        margin-bottom: 1rem;
 
         @media (min-width: 768px) {
-          font-size: 3.5rem; // Larger font size for tablets and desktops
+          font-size: 3.5rem;
         }
 
         @media (min-width: 1024px) {
-          font-size: 4rem; // Even larger font size for larger screens
+          font-size: 4rem;
         }
       }
 
       p {
-        color: #6b7280; // Muted text color
-        max-width: 42rem; // Limit paragraph width for readability
-        margin: 0 auto; // Center the paragraph
-        font-size: 1rem; // Default font size for mobile
+        color: #6b7280;
+        max-width: 42rem;
+        margin: 0;
+        font-size: 1rem;
         line-height: 1.5;
 
         @media (min-width: 768px) {
-          font-size: 1.125rem; // Slightly larger font size for tablets and desktops
+          font-size: 1.125rem;
         }
       }
     }
   }
+
+  @media (max-width: 767px) {
+    button {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .text-center {
+      padding-right: 100px; // Space for mobile button
+    }
+  }
+}
+
+.order-button {
+  font-family: 'Poppins', sans-serif;
+  padding: 1.25rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+  min-width: 220px;
+  
+  // Color and Shadow
+	background: linear-gradient(45deg, rgba(230, 230, 255, 0.9), rgba(230, 230, 255, 0.7));
+	border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(107, 33, 168, 0.35);
+  
+  // Hover effects
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(16, 185, 173, 0.4);
+    background-size: 150% 150%;
+    
+    &::after {
+      transform: translateX(0%);
+    }
+  }
+
+  // Active state
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 15px rgba(107, 33, 168, 0.3);
+  }
+
+  // Gradient animation
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+
+  // Shine effect
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.25),
+      transparent
+    );
+    transition: left 0.6s ease-in-out;
+  }
+
+  &:hover::after {
+    left: 150%;
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .order-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    min-width: 180px;
+  }
+}
+
+
+img {
+	width: 20px;
+	height: 20px;
 }
