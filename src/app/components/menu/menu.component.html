@@ -36,17 +36,18 @@
 			@for (item of getCategoryItems(category.Name); track item.Name) {
 				<div 
 					class="bg-white rounded-lg shadow-xl overflow-hidden cursor-pointer hover:shadow-2xl transition-all hover:-translate-y-1"
-					(click)="goToItem(item.Id)"
-				>
+					(click)="goToItem(item.Id)">
 					<div class="aspect-video w-full">
-						<img [src]="item.ImagePath" [alt]="item.Name" class="object-cover">
+							<img [src]="item.ImagePath" [alt]="item.Name" class="object-cover w-full h-full">
 					</div>
 					<div class="p-6">
-						<div class="flex justify-between items-start mb-2">
-							<h3 class="font-display text-lg text-purple-900">{{ item.Name }}</h3>
-							<span class="font-medium text-green-600">{{ item.Description }}</span>
-						</div>
-						<p class="text-sm text-muted-foreground">{{ item.Price | currency: 'GBP':'symbol':'1.2-2' }}</p>
+							<!-- Name and Price row -->
+							<div class="flex flex-row flex-nowrap justify-between items-center mb-1 w-full"> 
+									<h3 class="font-display text-lg text-purple-900 font-bold w-[80%] truncate">{{ item.Name }}</h3>
+									<h3 class="font-medium text-green-600 font-bold min-w-[20%] text-right">{{ item.Price | currency: 'GBP':'symbol':'1.2-2' }}</h3> 
+							</div>
+							<!-- Description row -->
+							<p class="text-sm text-muted-foreground mt-2">{{ item.Description }}</p>
 					</div>
 				</div>
 			}

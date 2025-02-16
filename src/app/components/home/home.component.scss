@@ -94,6 +94,7 @@ h2, .grid, .relative {
 
 .slideshow-slide {
   animation: slideLeft 0.5s ease-in-out;
+	border-radius: 10px;
 }
 
 /* Smooth Color Effects */
@@ -118,31 +119,34 @@ button {
 
 /* Today's Specials Slideshow */
 .slideshow-container {
-  width: 100%;
+  width: auto;
 	padding: 20px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+	border-radius: 10px;
 }
 
 .slideshow-wrapper {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%; // Add this in your component
+  width: auto; // Add this in your component
+	border-radius: 10px;
 }
 
 .slideshow-slide {
   flex: 0 0 100%;
-  width: 100%;
+  width: auto;
   padding: 0 8px;
   box-sizing: border-box;
 }
 
 .aspect-ratio-box {
   position: relative;
-  width: 100%;
+  width: auto;
   padding-bottom: 56.25%; // 16:9 aspect ratio (9/16 = 0.5625)
   background: #f0f4f8;
+	border-radius: 10px;
   
   .slideshow-image {
     position: absolute;
@@ -153,6 +157,7 @@ button {
     object-fit: contain;
     padding: 16px;
     box-sizing: border-box;
+		border-radius: 10px;
   }
 }
 

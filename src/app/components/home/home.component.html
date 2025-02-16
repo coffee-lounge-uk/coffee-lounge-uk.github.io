@@ -1,9 +1,6 @@
 <main class="container mx-auto px-8 py-8">
   <!-- Today's Specials -->
-<section class="mb-16 px-4">
-  <h2 class="font-display text-2xl md:text-3xl mb-6 text-center text-purple-800">
-    Today's Specials
-  </h2>
+<section class="mb-8 px-4">
   <div class="slideshow-container">
     <div class="slideshow-wrapper" [style.transform]="'translateX(-' + (currentSpecialIndex * 100) + '%)'">
       @for (special of specials; track special.Name) {

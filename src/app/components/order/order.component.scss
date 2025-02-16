@@ -256,15 +256,16 @@
 }
 
 .order-section {
-	margin-top: 20px;
+	margin: 20px auto;
 	padding: 20px; // Adds even spacing on all sides
 	border-radius: 12px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 16px;
-	width: 100%; // Ensures it doesn't exceed its container
+	width: 80%; // Ensures it doesn't exceed its container
 	box-sizing: border-box; // Prevents overflow due to padding
+	border-radius: 12px;
 }
 
 .button-container {
@@ -272,15 +273,16 @@
 	flex-direction: column;
 	gap: 12px;
 	width: 100%;
-	max-width: 90%; // Prevents buttons from stretching too wide
+  align-items: center; 
 }
 
 .call-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%; // Takes full width of the container but doesn't overflow
-	padding: 14px 16px;
+	width: auto; // Takes full width of the container but doesn't overflow
+	padding: 14px 24px;
+	max-width: 300px;
 	background-color: #6B21A8;
 	color: white;
 	border-radius: 8px;
@@ -288,6 +290,7 @@
 	font-weight: 500;
 	transition: background 0.3s ease-in-out;
 	box-sizing: border-box; // Ensures padding doesn't cause overflow
+	align-self: center;
 
 	&:hover {
 		background-color: #4C1D95;
@@ -301,3 +304,10 @@
 }
 
 
+.location {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
