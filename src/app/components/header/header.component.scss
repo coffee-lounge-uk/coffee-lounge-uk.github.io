@@ -149,6 +149,11 @@ header {
   &:hover::after {
     left: 150%;
   }
+
+	img {
+		width: 20px;
+		height: 20px;
+	}
 }
 
 @keyframes gradientShift {
@@ -166,8 +171,7 @@ header {
   }
 }
 
-
-img {
-	width: 20px;
-	height: 20px;
+.logo-image {
+	width: 100px;
+	height: 100px;
 }
