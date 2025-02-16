@@ -10,6 +10,10 @@ export const routes: Routes = [
 		path: 'item/:id',
     loadComponent: () => import('./components/item-detail/item-detail.component').then(m => m.ItemDetailComponent)
   },
+	{
+		path: 'order',
+    loadComponent: () => import('./components/order/order.component').then(m => m.OrderComponent)
+  },
 	{ path: '**', redirectTo: '' },
 ];
 
