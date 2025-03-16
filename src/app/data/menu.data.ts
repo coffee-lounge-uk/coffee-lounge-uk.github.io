@@ -186,7 +186,7 @@ export const MenuItems: MenuItem[] = [
 		Name: 'MILKCAKE',
 		Description: 'Rich and creamy milk cake.',
 		Price: 2.00,
-		IsSpecial: false,
+		IsSpecial: true,
 		Category: MenuCategory.Desserts,
 		ImagePath: "assets/images/d3.jpeg",
 		Id: 20
