@@ -5,7 +5,7 @@
 }
 
 .bg-white {
-  background-color: white;
+  background-color: var(--color4);
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -266,6 +266,7 @@
 	width: 80%; // Ensures it doesn't exceed its container
 	box-sizing: border-box; // Prevents overflow due to padding
 	border-radius: 12px;
+	background-color: var(--color2);
 }
 
 .button-container {
@@ -283,7 +284,7 @@
 	width: auto; // Takes full width of the container but doesn't overflow
 	padding: 14px 24px;
 	max-width: 300px;
-	background-color: #6B21A8;
+	background-color: var(--color4);
 	color: white;
 	border-radius: 8px;
 	text-decoration: none;
