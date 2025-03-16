@@ -1,35 +1,18 @@
 <main class="container mx-auto px-8 py-8">
   <!-- Today's Specials -->
-<section class="mb-8 px-4">
-  <div class="slideshow-container">
-    <div class="slideshow-wrapper" [style.transform]="'translateX(-' + (currentSpecialIndex * 100) + '%)'">
-      @for (special of specials; track special.Name) {
-        <div class="slideshow-slide">
-          <div class="bg-white rounded-lg shadow-xl overflow-hidden mx-2 cursor-pointer hover:shadow-2xl transition-shadowp px-8 py-8"
-               (click)="goToItem(special.Id)">
-            <div class="aspect-ratio-box">
-              <img [src]="special.ImagePath" [alt]="special.Name" class="slideshow-image">
-            </div>
-            <div class="p-4 md:p-6">
-              <div class="flex justify-between items-start mb-2">
-                <h3 class="font-display text-lg md:text-xl text-purple-900">{{ special.Name }}</h3>
-                <span class="text-base md:text-lg font-medium text-green-600">{{ special.Price | currency: 'GBP':'symbol':'1.2-2' }}</span>
-              </div>
-              <p class="text-sm md:text-base text-gray-600">{{ special.Description }}</p>
-            </div>
-          </div>
-        </div>
-      }
-    </div>
-
-    <button class="slideshow-button left" (click)="prevSlide()">
-      <img src="assets/svg/left.svg" alt="Left" class="w-6 h-6">
-    </button>
-    <button class="slideshow-button right" (click)="nextSlide()">
-      <img src="assets/svg/right.svg" alt="Right" class="w-6 h-6">
-    </button>
-  </div>
-</section>
+	<ngb-carousel [interval]="3000" [wrap]="true" [keyboard]="true" [pauseOnHover]="true">
+		<ng-template ngbSlide *ngFor="let special of specials; index as i" id="slide-{{i}}">
+			<img [src]="special.ImagePath" alt="Slide {{ i + 1 }}" class="d-block w-100" (click)="goToItem(special.Id)">
+			<!-- Optional: add a caption if needed -->
+			<div class="p-4 md:p-6" (click)="goToItem(special.Id)">
+				<div class="flex justify-between items-start mb-2">
+					<h3 class="font-display text-lg md:text-xl text-purple-900">{{ special.Name }}</h3>
+					<span class="text-base md:text-lg font-medium text-green-600">{{ special.Price | currency: 'GBP':'symbol':'1.2-2' }}</span>
+				</div>
+				<p class="text-sm md:text-base text-gray-600">{{ special.Description }}</p>
+			</div>
+		</ng-template>
+	</ngb-carousel>
 
 	<app-menu/>
   <app-about/>
