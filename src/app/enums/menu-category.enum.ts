@@ -10,5 +10,5 @@ export enum MenuCategory {
 	Coffe = 'Coffe (Hot and Cold)',
 	Tea = 'Tea',
 	Sandwiches = 'Sandwiches',
-	BangladeshiStreetFood = 'Bangladeshi Street Food'
+	BangladeshiStreetFood = 'Bangladeshi Street Food',
 }

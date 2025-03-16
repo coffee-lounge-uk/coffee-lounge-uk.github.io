@@ -23,10 +23,24 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private menuService: MenuService) {}
 
   ngOnInit() {
-    this.specials = this.menuService.getSpecialItems();
+		var partyItem: MenuItem = {
+			Id: 0,
+			Name: "We take order for Party",
+			Description: "We take order for Party, Wedding, Birthday, Office Party, etc. Please call us for more details.",
+			Price: 0,
+			IsSpecial: true,
+			Category: MenuCategory.BangladeshiStreetFood,
+			ImagePath: "assets/images/party.jpeg"
+		};
+    this.specials = [partyItem, ...this.menuService.getSpecialItems()];
   }
 
 	goToItem(id: number) {
-		this.router.navigate([`/item/${id}`]);
+		if (id == 0) {
+			this.router.navigate([`/order`]);
+		}
+		else {
+			this.router.navigate([`/item/${id}`]);
+		}
 	}
 }

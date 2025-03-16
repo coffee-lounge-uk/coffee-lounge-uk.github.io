@@ -7,7 +7,9 @@
 			<div class="p-4 md:p-6" (click)="goToItem(special.Id)">
 				<div class="flex justify-between items-start mb-2">
 					<h3 class="font-display text-lg md:text-xl text-purple-900">{{ special.Name }}</h3>
-					<span class="text-base md:text-lg font-medium text-green-600">{{ special.Price | currency: 'GBP':'symbol':'1.2-2' }}</span>
+					@if(special.Price > 0) {
+						<span class="text-base md:text-lg font-medium text-green-600">{{ special.Price | currency: 'GBP':'symbol':'1.2-2' }}</span>
+					}
 				</div>
 				<p class="text-sm md:text-base text-gray-600">{{ special.Description }}</p>
 			</div>
