@@ -87,7 +87,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/logo.jpg",
-              "src/assets"
+              "src/assets",
+							"src/styles"
             ],
             "styles": [
               "src/styles.scss"

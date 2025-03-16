@@ -1,5 +1,5 @@
 header {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--color3);
   backdrop-filter: blur(10px);
   padding: 1.5rem 0;
   margin-bottom: 2rem;
@@ -104,7 +104,7 @@ header {
   min-width: 220px;
   
   // Color and Shadow
-	background: linear-gradient(45deg, rgba(230, 230, 255, 0.9), rgba(230, 230, 255, 0.7));
+	background-color: var(--color4);
 	border-radius: 8px;
   box-shadow: 0 8px 25px rgba(107, 33, 168, 0.35);
   
@@ -151,8 +151,8 @@ header {
   }
 
 	img {
-		width: 20px;
-		height: 20px;
+		width: 2rem;
+		height: 2rem;
 	}
 }
 

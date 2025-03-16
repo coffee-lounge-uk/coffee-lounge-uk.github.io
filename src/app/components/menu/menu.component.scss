@@ -23,8 +23,8 @@ body {
 
 
 /* Menu Items & Sliding Windows */
-.bg-white {
-	background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+.menu-item {
+	background-color: var(--color2);
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
   overflow: hidden;
