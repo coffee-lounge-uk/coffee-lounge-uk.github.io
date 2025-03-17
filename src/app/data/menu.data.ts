@@ -68,6 +68,15 @@ export const MenuItems: MenuItem[] = [
 		ImagePath: "assets/images/ls2.jpeg",
 		Id: 7
 	},
+	{
+		Name: "Bhuna Khichuri",
+		Description: "Aromatic Rice And Lentil Dish With Spices And Meat.",
+		Price: 5.00,
+		Category: MenuCategory.LunchSpecial,
+		IsSpecial: false,
+		ImagePath: "assets/images/ls3.jpeg",
+		Id: 59
+	},
 
 	// Salad
 	{
@@ -165,7 +174,7 @@ export const MenuItems: MenuItem[] = [
 
 	// Desserts
 	{
-		Name: 'RICE PUDDING (পায়েস)',
+		Name: 'Rice Pudding (পায়েস)',
 		Description: 'Creamy rice pudding flavored with cardamom and garnished with nuts.',
 		Price: 1.50,
 		IsSpecial: true,
@@ -174,7 +183,7 @@ export const MenuItems: MenuItem[] = [
 		Id: 18
 	},
 	{
-		Name: 'SWEET YOGURT',
+		Name: 'Sweet Yougurt',
 		Description: 'Creamy yogurt sweetened with sugar and flavored with cardamom.',
 		Price: 1.50,
 		IsSpecial: false,
@@ -183,7 +192,7 @@ export const MenuItems: MenuItem[] = [
 		Id: 19
 	},
 	{
-		Name: 'MILKCAKE',
+		Name: 'Milkcake',
 		Description: 'Rich and creamy milk cake.',
 		Price: 2.00,
 		IsSpecial: true,
@@ -194,7 +203,7 @@ export const MenuItems: MenuItem[] = [
 
 	// Drinks
 	{
-		Name: 'SOFT DRINKS CAN (330ml)',
+		Name: 'Soft Drink Can(330ml)',
 		Description: 'A refreshing soft drink in a convenient 330ml can.',
 		Price: 1.00,
 		IsSpecial: false,
@@ -203,7 +212,7 @@ export const MenuItems: MenuItem[] = [
 		Id: 21
 	},
 	{
-		Name: 'RUBICON CAN (330ml)',
+		Name: 'Rubicon Can (330ml)',
 		Description: 'A delicious Rubicon drink in a 330ml can, perfect for any time of the day.',
 		Price: 1.00,
 		IsSpecial: false,
@@ -212,7 +221,7 @@ export const MenuItems: MenuItem[] = [
 		Id: 22
 	},
 	{
-		Name: '7UP CAN',
+		Name: '7UP Can',
 		Description: 'A crisp and refreshing 7UP soft drink in a 330ml can.',
 		Price: 1.00,
 		IsSpecial: false,
@@ -221,7 +230,7 @@ export const MenuItems: MenuItem[] = [
 		Id: 23
 	},
 	{
-		Name: 'WATER (500ml)',
+		Name: 'Water (500ml)',
 		Description: 'Pure and refreshing water in a 500ml bottle.',
 		Price: 1.00,
 		IsSpecial: false,
@@ -230,7 +239,7 @@ export const MenuItems: MenuItem[] = [
 		Id: 24
 	},
 	{
-		Name: 'RED BULL (330ml)',
+		Name: 'Red Bull (330ml)',
 		Description: 'An energizing Red Bull drink in a 330ml can.',
 		Price: 1.80,
 		IsSpecial: false,
@@ -239,12 +248,30 @@ export const MenuItems: MenuItem[] = [
 		Id: 25
 	},
 	{
-		Name: 'JUICE BOTTLE (500ml)',
-		Description: 'Freshly made juice in a 500ml bottle.',
+		Name: 'Tropical Juice Bottle',
+		Description: 'Freshly made tropical juice bottle.',
 		Price: 1.99,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr6.jpeg',
+		Id: 26
+	},
+	{
+		Name: 'Tango Can',
+		Description: 'A refreshing Tango can.',
+		Price: 1.99,
+		IsSpecial: false,
+		Category: MenuCategory.Drinks,
+		ImagePath: 'assets/images/dr7.jpeg',
+		Id: 26
+	},
+	{
+		Name: 'Fanta Can',
+		Description: 'A refreshing Fanta can.',
+		Price: 1.99,
+		IsSpecial: false,
+		Category: MenuCategory.Drinks,
+		ImagePath: 'assets/images/dr8.jpeg',
 		Id: 26
 	},
 
