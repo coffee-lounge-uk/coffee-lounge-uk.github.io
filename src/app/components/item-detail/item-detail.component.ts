@@ -4,6 +4,7 @@ import { MenuItem } from '../../interfaces/menu-item.interface';
 import { ActivatedRoute, Router } from '@angular/router';
 import { OrderComponent } from "../order/order.component";
 import { CurrencyPipe } from '@angular/common';
+import { AnalyticsService } from '../../services/analytics.service';
 
 @Component({
   selector: 'app-item-detail',
@@ -15,12 +16,12 @@ import { CurrencyPipe } from '@angular/common';
 export class ItemDetailComponent {
 	item?: MenuItem;
 
-  constructor(private route: ActivatedRoute, private menuService: MenuService) {
+  constructor(private route: ActivatedRoute, private menuService: MenuService, private analytics: AnalyticsService) {
     this.route.paramMap.subscribe(params => {
 			const itemId = params.get('id'); 
-			console.log("Reached item id", itemId);
 			if (itemId)
 				this.item = this.menuService.getItemById(itemId);
+				this.analytics.logViewItem(itemId);
     });
   }
 }
