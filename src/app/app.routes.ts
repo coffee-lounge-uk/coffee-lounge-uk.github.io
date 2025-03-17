@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
-import { environment } from '../environments/environment';
 
 export const routes: Routes = [
 	{ path: '', component: HomeComponent },
@@ -19,3 +16,13 @@ export const routes: Routes = [
   },
 	{ path: '**', redirectTo: '' },
 ];
+
+@NgModule({
+	imports: [
+		BrowserModule,
+		CommonModule,
+		RouterModule.forRoot(routes)
+	],
+	providers: [],
+})
+export class AppModule { }
