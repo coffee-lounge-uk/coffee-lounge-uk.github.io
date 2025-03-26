@@ -53,7 +53,7 @@ export const MenuItems: MenuItem[] = [
 	{
 		Name: "Fried Rice With Grilled Chicken And Salad",
 		Description: "Fried Rice With Grilled Chicken And Fresh Salad.",
-		Price: 4.00,
+		Price: 5.00,
 		Category: MenuCategory.LunchSpecial,
 		IsSpecial: true,
 		ImagePath: "assets/images/ls1.jpeg",
@@ -62,7 +62,7 @@ export const MenuItems: MenuItem[] = [
 	{
 		Name: "Noodles With Chicken",
 		Description: "Stir-Fried Noodles With Chicken And Vegetables.",
-		Price: 3.50,
+		Price: 4.00,
 		Category: MenuCategory.LunchSpecial,
 		IsSpecial: false,
 		ImagePath: "assets/images/ls2.jpeg",
@@ -259,7 +259,7 @@ export const MenuItems: MenuItem[] = [
 	{
 		Name: 'Tango Can',
 		Description: 'A refreshing Tango can.',
-		Price: 1.99,
+		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr7.jpeg',
@@ -268,7 +268,7 @@ export const MenuItems: MenuItem[] = [
 	{
 		Name: 'Fanta Can',
 		Description: 'A refreshing Fanta can.',
-		Price: 1.99,
+		Price: 1.00,
 		IsSpecial: false,
 		Category: MenuCategory.Drinks,
 		ImagePath: 'assets/images/dr8.jpeg',
